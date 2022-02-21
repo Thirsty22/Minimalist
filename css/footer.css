@@ -1,0 +1,146 @@
+@import url('../css/global.css');
+
+.footer__top {
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top__title {
+    max-width: 350px;
+}
+
+.footer-top__line {
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    background-color: var(--color-33323d);
+    opacity: 0.15;
+}
+
+.footer-top__btn {
+    padding: 17px 35px 17px 32px;
+}
+
+.footer__bottom {
+    padding: 25px 0;
+    background-color: var(--color-33323d);   
+}
+
+.footer-bottom__inner {
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo {
+    margin-right: 50px;
+}
+
+.footer .logo svg {
+    fill: var(--color-ffffff);
+}
+
+.socials__item-link svg {
+    fill: var(--color-ffffff);
+}
+
+.footer__nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    background-color: transparent;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.footer__nav .nav__item-link {
+    color: var(--color-ffffff);
+}
+
+.socials__list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.socials__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.socials__item-link svg:hover {
+    fill: var(--color-5fb4a2);
+}
+
+/* ==========================*/
+/* Media=====================*/
+@media screen and (max-width: 1400px){
+}
+
+@media screen and (max-width: 1100px){
+    .footer-top__line {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .footer-top__line {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .footer__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer .logo {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .footer__top {
+        padding-bottom: 80px;
+    }
+
+    .footer-top__title {
+        margin-bottom: 40px;
+    }
+
+    .footer__nav {
+        background-color: transparent;
+        display: block !important;
+    }
+
+    .footer__top {
+        flex-direction: column;
+    }
+
+    .footer-top__line {
+        display: none;
+    }
+
+    .footer-bottom__inner {
+        flex-direction: column;
+    }
+
+    .footer__bottom {
+        padding: 55px 0;
+    }
+
+    .socials__list {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+}
+
+@media screen and (max-width: 576px){
+}
+/* Media=====================*/

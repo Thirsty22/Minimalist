@@ -1,0 +1,416 @@
+@import url('../css/global.css');
+
+.portfolio__item:not(:last-child) {
+  padding-bottom: 80px;
+}
+
+.portfolio__item:last-child {
+  padding-bottom: 150px;
+}
+
+.portfolio {
+  padding-top: 94px;
+}
+
+.portfolio__item-banner {
+  background-color: var(--color-ffefec);
+  padding: 50px 54px 0 54px;
+  text-align: center;
+}
+
+.portfolio__item:nth-child(2) .portfolio__item-banner {
+  background-color: var(--color-4f63d8);
+}
+
+.portfolio__item:nth-child(3) .portfolio__item-banner {
+  background-color: var(--color-9a99Aab);
+}
+
+.portfolio__item:last-child .portfolio__item-banner {
+  background-color: var(--color-41b4d3);
+}
+
+.portfolio__item-banner img {
+  max-width: 100%;
+  position: relative;
+  bottom: -4px;
+}
+
+.portfolio__item-content {
+  position: relative;
+}
+
+.portfolio__item-content::before,
+.portfolio__item-content::after {
+  content: '';
+  width: 95%;
+  height: 1px;
+  background-color: var(--color-33323d);
+  position: absolute;
+  left: 0;
+  opacity: 0.15;
+}
+
+.portfolio__item-content::before {
+  top: -103px;
+}
+
+.portfolio__item-content::after {
+  bottom: -103px;
+}
+
+.portfolio__item-title {
+  margin-bottom: 28px;
+}
+
+.portfolio__item-desc {
+  margin-bottom: 24px;
+}
+
+.portfolio__item-btn {
+  padding: 17px 36px 17px 32px;
+}
+
+
+/* PORTFOLIO PAGE =============== */
+.portfolio__image-wrap {
+  margin-top: 103px;
+  display: flex;
+}
+
+.manage-hero-image {
+  background: var(--color-ffefec);
+}
+.bookmark-hero-image {
+  background: var(--color-5267e0);
+}
+.insure-hero-image {
+  background: var(--color-9a99Aab);
+}
+.fylo-hero-image {
+  background: var(--color-41b4d3);
+}
+
+.portfolio__img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.portfolio__desc {
+  margin-top: 115px;
+}
+
+.portfolio__subtitle {
+  font-family: Ibarra Real Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.285714px;
+  color: var(--color-33323d);
+}
+
+.portfolio__paragraph {
+  margin-top: 29px;
+}
+
+/* left ---------------------- */
+.portfolio__left {
+  position: relative;
+}
+
+.left:before {
+  content: '';
+  margin-bottom: 48px;
+  display: inline-block;
+  width: 350px;
+  height: 1px;
+  background: var(--color-33323d);
+  opacity: 0.15;
+}
+.left:after {
+  content: '';
+  margin-top: 48px;
+  display: inline-block;
+  width: 350px;
+  height: 1px;
+  background: var(--color-33323d);
+  opacity: 0.15;
+}
+
+.left__paragraph {
+  max-width: 350px;
+}
+
+.left__blue-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-5fb4a2);
+}
+
+.blue-text-one {
+  margin-top: 23px;
+}
+
+.blue-text-two {
+  margin-top: 16px;
+}
+
+.portfolio__btn {
+  margin-top: 32px;
+  padding: 17px 32px;
+}
+
+/* right ---------------------- */
+.right {
+  margin-bottom: 80px;
+}
+.right__subtitle {
+  margin-top: 40px;
+}
+
+.right__image-wrap {
+  margin-top: 32px;
+  display: flex;
+}
+
+.first-image {
+  padding-top: 45px;
+}
+
+.right__img-one,
+.right__img-two {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.manage-image {
+  background: var(--color-ffefec);
+}
+.bookmark-image {
+  background: var(--color-5267e0);
+}
+.fylo-image {
+  background: var(--color-41b4d3);
+}
+.insure-image {
+  background: var(--color-9a99Aab);
+}
+
+.manage-img-one,
+.manage-image-two{
+  filter: drop-shadow(0px 4px 4px var(--color-ffefec));
+}
+
+.portfolio__link-list.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.portfolio__link-list {
+  margin-bottom: 80px;
+}
+
+.portfolio__link {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-dcdbde);
+  height: 130px;
+}
+
+.portfolio__link a {
+  padding: 32px 40px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio__link:nth-child(1) {
+  border-left: none;
+}
+.portfolio__link:nth-child(2) {
+  border-right: none;
+}
+
+.portfolio__link:nth-child(1):hover a {
+  transform: translateX(-10px);
+}
+
+.portfolio__link:nth-child(2):hover a {
+  transform: translateX(10px);
+}
+
+.portfolio__link:nth-child(1) a:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 16px;
+  background-image: url(../media/img/portfolio/arrow-left.svg);
+}
+
+.portfolio__link:nth-child(2) a:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 16px;
+  background-image: url(../media/img/portfolio/arrow-right.svg);
+}
+
+.portfolio__link p {
+  font-family: Ibarra Real Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.285714px;
+  color: var(--color-33323d);
+}
+
+.portfolio__link span {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: right;
+  color: var(--color-33323d);
+  opacity: 0.5;
+}
+
+.portfolio__link:nth-child(2) a{
+  text-align: right;
+}
+/* /PORTFOLIO PAGE =============== */
+
+
+/* Media=====================*/
+@media screen and (max-width: 1400px){
+}
+
+@media screen and (max-width: 1200px){
+}
+
+@media screen and (max-width: 1024px){
+  .portfolio__image-wrap {
+    width: 100%;
+  }
+
+  .portfolio__img,
+  .right__img-one,
+  .right__img-two {
+    width: 90%;
+  }
+
+  .insure-img {
+    width: 100%;
+  }
+  .insure-img-two {
+    width: 90%;
+  }
+  
+  .portfolio__desc {
+    margin-top: 40px;
+  }
+
+  .left:before,
+  .left:after {
+    width: 100%;
+  }
+
+  .left__inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .paragraph-one {
+    margin-top: -40px !important;
+    max-width: 339px;
+  }
+
+  .portfolio__subtitle {
+    margin-top: 40px;
+    margin-bottom: 28px;
+  }
+
+  .portfolio__paragraph {
+    margin-top: 0;
+  }
+
+  .portfolio__item-banner img {
+    max-width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 992px){
+}
+
+@media screen and (max-width: 767px){
+
+  .portfolio {
+    padding-top: 104px;
+  }
+
+  .portfolio__item-banner {
+    margin: 0 auto;
+    margin-bottom: 57px;
+  }
+
+  .portfolio__item-content::before {
+    top: -24px;
+  }
+  
+  .portfolio__item-content::after {
+    bottom: -24px;
+  }
+
+  .left__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .paragraph-one {
+    max-width: 100%;
+  }
+
+  .portfolio__item-title {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 576px){
+
+  .first-image {
+    padding-top: 21px;
+  }
+
+  .portfolio__link a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .portfolio__link p {
+    margin-top: 10px;
+  }
+
+  .portfolio__link:nth-child(1) a::before {
+    top: 20%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .portfolio__link:nth-child(2) a:after {
+    top: 20%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+}
